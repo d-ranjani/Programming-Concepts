@@ -1,0 +1,20 @@
+PROGRAM-3:
+
+CODE:
+
+n = 600851475143  
+i = 2
+
+print "The largest prime factor:"
+while i * i < n:
+    while n%i == 0:
+        n = n / i
+    i = i + 1
+
+print (n)
+
+
+OUTPUT:
+
+The largest prime factor:
+6857
