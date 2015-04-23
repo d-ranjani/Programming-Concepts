@@ -1,11 +1,22 @@
+program-4
+
+Code:
+
+Find the largest palindrome made from the product of two 3-digit numbers.
+
 def is_pal(c):
     return int(str(c)[::-1]) == c
 
 maxpal = 0
-for a in range(99, 999, 1):
+for a in range(100, 999, 1):
     for b in range(a, 999,1):
         prod = a * b
         if is_pal(prod) and prod > maxpal:
             maxpal = prod
 
 print maxpal
+
+OUTPUT:
+
+Largest Palindrome Made from the product of 3-digit number are
+906609
