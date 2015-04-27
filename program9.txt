@@ -1,0 +1,27 @@
+program-9
+
+Code:
+
+There exists exactly one Pythagorean triplet for which a + b + c = 1000.
+Find the product abc.
+
+import math
+sum=1000
+sqrt1=int(math.sqrt(sum)+1)
+for n in range(1,sqrt1,1):
+    for m in range(n+1,sqrt1,1):
+        a=m*m-n*n
+        b=2*m*n
+        c=m*m+n*n
+        if((a+b+c)==sum):
+            d=a*b*c
+            print "The product of a,b,c"
+            print d 
+			
+			
+			
+			
+OUTPUT:
+The product of a,b,c
+31875000			
+			

@@ -1,0 +1,26 @@
+program-10
+
+Code:
+
+Find the sum of all the primes below two million.
+
+
+import math
+def isprime(n):
+    m=int(math.sqrt(n))
+    for i in range(2,m+1,1):
+        if(n%i==0):
+            return False
+    return True
+
+sumofprime=5
+for count in range(5,2000000,1):
+    if(isprime(count)):
+        sumofprime=sumofprime+count
+
+print "Sum of Primes"
+print sumofprime
+
+OUTPUT:
+Sum of Primes
+142913828922

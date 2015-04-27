@@ -1,0 +1,28 @@
+program-7
+
+Code:
+
+What is the 10 001st prime number?
+
+
+def isprime(n):
+    for i in range(2,(n/2)+1,1) : 
+        if(n%i==0):
+            return False
+    return True
+
+number=3
+nthprime=1
+while(1):
+    if(isprime(number)):
+        nthprime=nthprime+1
+    if(nthprime==10001):
+        print "The 10001th prime number is"
+        print number
+        break
+    number=number+1
+
+Output:
+
+The 10001th prime number is
+104743

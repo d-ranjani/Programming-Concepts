@@ -1,0 +1,21 @@
+program-6
+
+Code:
+
+Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+
+import math
+
+def sum_of_squares(n):
+    sum=math.pow((n*(n+1)/2),2)
+    return sum 
+
+def square_of_sum(n):
+    square=(n*(n+1)*(2*n+1))/6
+    return square
+print "The difference between the sum of the squares and the square of the sum"
+print sum_of_squares(100)-square_of_sum(100)
+
+OUTPUT:
+The difference between the sum of the squares and the square of the sum
+25164150.0
